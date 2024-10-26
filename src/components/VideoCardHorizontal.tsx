@@ -9,7 +9,7 @@ export const VideoCardHorizontal = ({video}: {video: Video}) => {
     }}>
         <div className="rounded-xl overflow-hidden col-span-5">
             <div>
-                <img src={video.Image} />
+                <img src={video.image} />
                 <Line progress={10} />
             </div>
         </div>
