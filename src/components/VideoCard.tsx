@@ -1,5 +1,5 @@
 import { useRouter } from "next/router"
-import type { Video } from "../videos"
+import type { Video } from "@/videos"
 import { Line } from "./Line"
 
 export const VideoCard = ({video}: {video: Video}) => {
@@ -9,7 +9,7 @@ export const VideoCard = ({video}: {video: Video}) => {
     }}>
         <div className="rounded-xl overflow-hidden">
             <div>
-                <img src={video.thumbImage} />
+                <img src={video.image} />
                 <Line progress={10} />
             </div>
         </div>

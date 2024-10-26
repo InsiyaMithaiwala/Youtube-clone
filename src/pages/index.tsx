@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import { VideoCard } from '@/components/VideoCard'
 import { Videos } from '@/videos'
 import { VideoGrid } from '@/components/VideoGrid'
-import { Appbar } from '@/components/Appbar'
+import { AppBar } from '@/components/AppBar'
 import { LeftBar } from '@/components/LeftBar'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main>
-      <Appbar/>
+      <AppBar/>
       <div className="flex">
         <LeftBar />
         <VideoGrid />
